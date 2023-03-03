@@ -1,0 +1,35 @@
+.header {
+  margin: auto;
+  border-radius: 5px;
+  max-width: 80%;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem 2.5rem;
+  background-color: #9dc08b;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.btn-addExpense {
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 1.5rem;
+  font-weight: 400;
+}
+.btn-addExpense:hover {
+  transform: scale(1.01);
+  font-weight: 400;
+
+  transition: all 1s;
+}
+.footer {
+  text-align: center;
+  margin: 1.5rem 2.5rem;
+  color: #fff;
+  font-size: 1rem;
+  font-family: cursive;
+}
+@media (max-width: 768px) {
+  .header {
+    max-width: 100%;
+  }
+}

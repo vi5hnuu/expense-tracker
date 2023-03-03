@@ -1,0 +1,69 @@
+.expense-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 0.5rem;
+  border-radius: 5px;
+  padding: 1.5rem 2.5rem;
+  background-color: #40513b;
+}
+
+.expense-item:hover {
+  transform: scale(1.01);
+  transition: all 1s;
+}
+
+.expense-name {
+  flex: 1;
+  margin-left: 1.5rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+  color: #fff;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d8d8d8;
+  padding: 1rem 2.5rem;
+  border-radius: 5px;
+}
+.currency-sign {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+.price {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .expense-name {
+    flex: 1;
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    color: #fff;
+  }
+
+  .price-container {
+    padding: 1rem 1.5rem;
+  }
+  .currency-sign {
+    font-size: 1rem;
+  }
+  .price {
+    font-size: 1rem;
+  }
+}
+
+/*
+Mobile: 360 x 640
+Mobile: 375 x 667
+Mobile: 360 x 720
+iPhone X: 375 x 812
+Pixel 2: 411 x 731
+Tablet: 768 x 1024
+Laptop: 1366 x 768
+*/

@@ -1,0 +1,42 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 1rem;
+  background-color: #9dc08b;
+  max-width: 80%;
+  padding-bottom: 1rem;
+  align-items: stretch;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2.5rem;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.actions > p {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+.actions #year {
+  border-radius: 5px;
+  padding: 0.5rem 2.5rem;
+}
+
+.actions #year:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .main {
+    max-width: 100%;
+  }
+}
