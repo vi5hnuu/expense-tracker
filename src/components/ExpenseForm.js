@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import './ExpenseForm.css'
+import styles from './ExpenseForm.module.css'
 
 function ExpenseForm(props) {
   console.log("EXPENSE FORM");
@@ -19,21 +19,21 @@ function ExpenseForm(props) {
     dateRef.current.value = ''
     props.onNewExpense(expenseData)
   }
-  return <form onSubmit={addExpense} className='new_expense__form'>
-    <div className='new_expense__control'>
+  return <form onSubmit={addExpense} className={styles['new_expense__form']}>
+    <div className={styles['new_expense__control']}>
       <label htmlFor='title'>Title</label>
       <input ref={titleRef} id='title' type="text" placeholder='New HP Laptop' />
     </div>
-    <div className='new_expense__control'>
+    <div className={styles['new_expense__control']}>
       <label htmlFor='amount'>Amount</label>
       <input ref={amountRef} id='amount' type="number" placeholder='1400' />
     </div>
-    <div className='new_expense__control'>
+    <div className={styles['new_expense__control']}>
       <label htmlFor='date'>Date</label>
       <input ref={dateRef} id='date' type="date" min='2023-03-03' />
     </div>
-    <div className='new_expense__actions'>
-      <button type='submit' className='btn__add'>Add</button>
+    <div className={styles['new_expense__actions']}>
+      <button type='submit' className={styles['btn__add']}>Add</button>
     </div>
   </form>
 }

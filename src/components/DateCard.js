@@ -1,4 +1,4 @@
-import './DateCard.css'
+import styles from './DateCard.module.css'
 
 
 const monthNames = ["January", "February", "March", "April", "May", "June",
@@ -8,10 +8,10 @@ function DateCard(props) {
   console.log("DATE CARD");
 
   const date = props.date
-  return <div className='date-container'>
-    <span className='month'>{monthNames[date.getMonth()]}</span>
-    <span className='year'>{date.getFullYear()}</span>
-    <span className='date'>{date.getDate()}</span>
+  return <div className={styles['date-container']}>
+    <span className={styles['month']}>{monthNames[date.getMonth()]}</span>
+    <span className={styles['year']}>{date.getFullYear()}</span>
+    <span className={styles['date']}>{date.getDate()}</span>
   </div>
 }
 

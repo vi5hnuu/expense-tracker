@@ -1,15 +1,15 @@
 import DateCard from './DateCard';
-import './ExpenseItem.css'
+import styles from './ExpenseItem.module.css'
 
 function ExpenseItem(props) {
   const expenseData = props.expense;
 
-  return <div className='expense-item' >
+  return <div className={styles['expense-item']} >
     <DateCard date={expenseData.date} />
-    <p className='expense-name'>{expenseData.title}</p>
-    <div className='price-container'>
-      <span className='currency-sign'>$</span>
-      <span className='price'>{expenseData.amount}</span>
+    <p className={styles['expense-name']}>{expenseData.title}</p>
+    <div className={styles['price-container']}>
+      <span className={styles['currency-sign']}>$</span>
+      <span className={styles['price']}>{expenseData.amount}</span>
     </div>
   </div >
 }
