@@ -3,9 +3,9 @@ import './ExpenseBar.css'
 function ExpenseBar(props) {
   return <div className='expense-bar'>
     <div className='progress'>
-      <div className='fill'></div>
+      <div className='fill' style={{ "height": `${props.fillHeight}%` }}></div>
     </div>
-    <p className='month' >Jan</p>
+    <p className='month' >{props.month}</p>
   </div>
 }
 
